@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Nans's random thoughts`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Nans Dumortier`,
+      summary: `who is a French Software Engineer at IBM`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Nans's blog`,
+    siteUrl: `TODO`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `NansDumortier`,
+      linkedIn: `nans-dumortier`
     },
   },
   plugins: [
