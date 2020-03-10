@@ -670,3 +670,82 @@ EC2 => load balancers
 define vps and listeners
 add security groups. The load balancer should have his own security group.
 Configure Health Check
+add EC2 Instances (they must be in the vpc we have chosen
+)
+
+### 10.5 auto scaling
+![](./res/2020-03-10-14-00-34.png)
+![](./res/2020-03-10-14-08-26.png)
+self healing services
+
+### 10.6 Demand based Scaling
+Scale to meet the demand.
+AutoScaling groups along with Amazon CloudWatch alarms.
+Scale down when CPU is low.
+![](./res/2020-03-10-14-14-43.png)
+
+### 10.7 Creating an auto scaling group
+1. create a launch configuration
+yum install -y httpd
+to be added in create launch configuration
+2. Create auto scaling group
+select the right vpc
+configure scaling policies
+
+## 11 Course Wrap up
+### 11.1 The ideal
+- Highly available
+it is up a great majority of the time
+AMI, EC2, S3, Auto Scaling
+
+- fault-tolerant
+Aplpication continues to operate through fault
+AMI (?), EC2, Elastic Load Balancing
+
+- Secure
+AWS CLI/Console
+
+- Durable
+Data survives loss of infrastructure
+EBS, Snapshots, S3, Glacier
+
+### 11.2 Best Practices
+- Design for Failure
+  - Everything will fail eventually
+  - any component can fail at any time
+  - "What happens when "____" ?
+
+- Scale Horizontally
+  - Stateless Applications/Components (state should not be stored locally)
+  - ElastiCache, DynamoDB
+  - Distributed processsing :
+    - parallelize and batch
+    - Kinesis, Elastic Map Reduce
+
+- Disposable resources over fixed servers
+- Automate, automate, automate !
+  - CloudFormation
+  - Elastic Beanstalk
+  - AutoScaling
+  - CloudWatch
+  - Third Party Tools
+    - Ansible, chef, puppet as ways to automate environment
+
+- Security in Layers
+  - VPS, Routes, NACLs, Security groups
+  - IAM: Users, groups (least rights possible), roles, keys
+  - Leverage multiple accounts
+  - Protect Master credentials
+
+- Loose Coupling
+  - Microservices
+  - Failures should not cascade
+  - ELB, Amazon SQS, Kinesis ...
+
+- Optimize for cost
+
+### 11.3 The exam
+80 minutes
+55 questions
+Architect a solution that is technically appropriate, and cost effective.
+![](./res/2020-03-10-14-41-30.png)
