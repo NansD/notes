@@ -6,7 +6,7 @@ module.exports = {
       summary: `who is a French Software Engineer at IBM`,
     },
     description: `Nans's blog`,
-    siteUrl: `TODO`,
+    siteUrl: `http://nans-dumortier.com`,
     social: {
       twitter: `NansDumortier`,
       linkedIn: `nans-dumortier`
@@ -75,6 +75,14 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "notes-taking-blog-bucket",
+        protocol: "https",
+        hostname: "www.nans-dumortier.com",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

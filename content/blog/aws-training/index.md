@@ -1,4 +1,8 @@
-# Formation AWS 09-10/03/2020
+---
+title: Formation AWS 09-10/03/2020
+date: "2020-03-10T15:15:00.284Z"
+description: "Notes taken during AWS training"
+---
 
 ## AWS Essentials
 
