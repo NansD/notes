@@ -1,3 +1,6 @@
+# Nans' blog!
+![deploy-to-s3](https://github.com/NansD-IBM/notes-taking-blog/workflows/deploy-to-s3/badge.svg?branch=master&event=push)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
