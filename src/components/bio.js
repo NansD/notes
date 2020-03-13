@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { FaDev, FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 
@@ -29,6 +30,8 @@ const Bio = () => {
           }
           social {
             twitter
+            linkedIn
+            devTo
           }
         }
       }
@@ -36,6 +39,10 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
+  const socialNetworkStyle = {
+    textDecoration: 'none',
+    boxShadow: 'none',
+  };
   return (
     <div
       style={{
@@ -62,12 +69,37 @@ const Bio = () => {
         <br/>
         Find me on :
         <br />
-        <a href={`https://twitter.com/${social.twitter}`}>
-          Twitter
+        <a 
+          href={`https://twitter.com/${social.twitter}`}
+          style={{
+            ...socialNetworkStyle,
+            color: '#1da1f2'
+          }}>
+          <FaTwitterSquare size='2em' />
         </a>
-        <br />
-        <a href={`https://www.linkedin.com/in/${social.linkedIn}/`}>
-          LinkedIn
+        <a 
+          href={`https://www.linkedin.com/in/${social.linkedIn}/`}
+          style={{
+            ...socialNetworkStyle,
+            color: '#0077b5'
+          }}>
+          <FaLinkedin size='2em' />
+        </a>
+        <a 
+          href={`https://dev.to/${social.devTo}`} 
+          style={{
+            ...socialNetworkStyle,
+            color: 'black'
+          }}>
+          <FaDev size='2em' />
+        </a>
+        <a 
+          href={`https://github.com/${social.github}`} 
+          style={{
+            ...socialNetworkStyle,
+            color: 'black'
+          }}>
+          <FaGithubSquare size='2em' />
         </a>
       </p>
     </div>

@@ -9,7 +9,9 @@ module.exports = {
     siteUrl: `http://nans-dumortier.com`,
     social: {
       twitter: `NansDumortier`,
-      linkedIn: `nans-dumortier`
+      linkedIn: `nans-dumortier`,
+      devTo: `nans`,
+      github: `NansD`
     },
   },
   plugins: [
