@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 export const SocialNetworkLink = (props) => {
   const socialNetworkStyle = {
@@ -16,4 +17,13 @@ export const SocialNetworkLink = (props) => {
         {props.children}
     </a>
   )
+}
+
+SocialNetworkLink.PropTypes = {
+  href: PropTypes.string.isRequired,
+  color: PropTypes.color.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+]).isRequired
 }
