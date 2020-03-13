@@ -9,8 +9,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { FaDev, FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa"
-
 import { rhythm } from "../utils/typography"
+import { SocialNetworkLink } from './social-network-link';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -32,6 +32,7 @@ const Bio = () => {
             twitter
             linkedIn
             devTo
+            github
           }
         }
       }
@@ -39,10 +40,6 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
-  const socialNetworkStyle = {
-    textDecoration: 'none',
-    boxShadow: 'none',
-  };
   return (
     <div
       style={{
@@ -69,38 +66,30 @@ const Bio = () => {
         <br/>
         Find me on :
         <br />
-        <a 
+        <SocialNetworkLink
           href={`https://twitter.com/${social.twitter}`}
-          style={{
-            ...socialNetworkStyle,
-            color: '#1da1f2'
-          }}>
+          color='#1da1f2'
+        >
           <FaTwitterSquare size='2em' />
-        </a>
-        <a 
+        </SocialNetworkLink>
+        <SocialNetworkLink
           href={`https://www.linkedin.com/in/${social.linkedIn}/`}
-          style={{
-            ...socialNetworkStyle,
-            color: '#0077b5'
-          }}>
+          color='#0077b5'
+        >
           <FaLinkedin size='2em' />
-        </a>
-        <a 
+        </SocialNetworkLink>
+        <SocialNetworkLink
           href={`https://dev.to/${social.devTo}`} 
-          style={{
-            ...socialNetworkStyle,
-            color: 'black'
-          }}>
-          <FaDev size='2em' />
-        </a>
-        <a 
+          color='#000000'
+        >
+          <FaDev size='2em'/>
+        </SocialNetworkLink>
+        <SocialNetworkLink
           href={`https://github.com/${social.github}`} 
-          style={{
-            ...socialNetworkStyle,
-            color: 'black'
-          }}>
+          color='#000000'
+        >
           <FaGithubSquare size='2em' />
-        </a>
+        </SocialNetworkLink>
       </p>
     </div>
   )
