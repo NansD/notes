@@ -21,7 +21,7 @@ export const SocialNetworkLink = (props) => {
 
 SocialNetworkLink.PropTypes = {
   href: PropTypes.string.isRequired,
-  color: PropTypes.color.isRequired,
+  color: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
