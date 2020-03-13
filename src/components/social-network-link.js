@@ -19,11 +19,11 @@ export const SocialNetworkLink = (props) => {
   )
 }
 
-SocialNetworkLink.PropTypes = {
+SocialNetworkLink.propTypes = {
   href: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-]).isRequired
+    ]).isRequired
 }
