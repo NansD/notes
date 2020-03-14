@@ -5,12 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-import { FaDev, FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa"
-import { rhythm } from "../utils/typography"
-import { SocialNetworkLink } from './social-network-link';
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
+import {
+  FaDev, FaLinkedin, FaTwitterSquare, FaGithubSquare,
+} from 'react-icons/fa';
+import { rhythm } from '../utils/typography';
+import SocialNetworkLink from './social-network-link';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -37,13 +39,13 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <div
       style={{
-        display: `flex`,
+        display: 'flex',
         marginBottom: rhythm(2.5),
       }}
     >
@@ -54,45 +56,49 @@ const Bio = () => {
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
           minWidth: 50,
-          borderRadius: `100%`,
+          borderRadius: '100%',
         }}
         imgStyle={{
-          borderRadius: `50%`,
+          borderRadius: '50%',
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <br/>
+        Written by
+        {' '}
+        <strong>{author.name}</strong>
+        {' '}
+        {author.summary}
+        {' '}
+        <br />
         Find me on :
         <br />
         <SocialNetworkLink
           href={`https://twitter.com/${social.twitter}`}
-          color='#1da1f2'
+          color="#1da1f2"
         >
-          <FaTwitterSquare size='2em' />
+          <FaTwitterSquare size="2em" />
         </SocialNetworkLink>
         <SocialNetworkLink
           href={`https://www.linkedin.com/in/${social.linkedIn}/`}
-          color='#0077b5'
+          color="#0077b5"
         >
-          <FaLinkedin size='2em' />
+          <FaLinkedin size="2em" />
         </SocialNetworkLink>
         <SocialNetworkLink
-          href={`https://dev.to/${social.devTo}`} 
-          color='#000000'
+          href={`https://dev.to/${social.devTo}`}
+          color="#000000"
         >
-          <FaDev size='2em'/>
+          <FaDev size="2em" />
         </SocialNetworkLink>
         <SocialNetworkLink
-          href={`https://github.com/${social.github}`} 
-          color='#000000'
+          href={`https://github.com/${social.github}`}
+          color="#000000"
         >
-          <FaGithubSquare size='2em' />
+          <FaGithubSquare size="2em" />
         </SocialNetworkLink>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

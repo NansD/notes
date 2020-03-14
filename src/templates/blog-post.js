@@ -1,15 +1,17 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+/* eslint-disable react/no-danger */
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import PropTypes from 'prop-types';
+import Bio from '../components/bio';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { rhythm, scale } from '../utils/typography';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata.title;
+  const { previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -30,7 +32,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p
             style={{
               ...scale(-1 / 5),
-              display: `block`,
+              display: 'block',
               marginBottom: rhythm(1),
             }}
           >
@@ -51,34 +53,38 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <nav>
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            listStyle: 'none',
             padding: 0,
           }}
         >
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                ←
+                {' '}
+                {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {next.frontmatter.title}
+                {' '}
+                →
               </Link>
             )}
           </li>
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -98,4 +104,30 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
+
+
+BlogPostTemplate.propTypes = PropTypes.shape({
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.shape({
+        node: PropTypes.shape({
+          excerpt: PropTypes.string.isRequired,
+          fields: PropTypes.shape({
+            slug: PropTypes.string.isRequired,
+          }).isRequired,
+          frontmatter: PropTypes.shape({
+            date: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+          }).isRequired,
+        }).isRequired,
+      }).isRequired).isRequired,
+    }).isRequired,
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+}).isRequired;

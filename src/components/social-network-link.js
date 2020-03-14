@@ -1,29 +1,31 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export const SocialNetworkLink = (props) => {
+const SocialNetworkLink = ({ href, color, children }) => {
   const socialNetworkStyle = {
     textDecoration: 'none',
     boxShadow: 'none',
   };
   return (
     <a
-      href={props.href}
+      href={href}
       style={{
         ...socialNetworkStyle,
-        color: props.color
+        color,
       }}
-      >
-        {props.children}
+    >
+      {children}
     </a>
-  )
-}
+  );
+};
 
 SocialNetworkLink.propTypes = {
   href: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-    ]).isRequired
-}
+    PropTypes.node,
+  ]).isRequired,
+};
+
+export default SocialNetworkLink;
