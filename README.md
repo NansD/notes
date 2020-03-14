@@ -1,5 +1,5 @@
 # Nans' blog!
-![deploy-to-s3](https://github.com/NansD-IBM/notes-taking-blog/workflows/deploy-to-s3/badge.svg?branch=master&event=push)
+![deploy-to-s3](https://github.com/NansD/nans-random-thoughts/workflows/deploy-to-s3/badge.svg?branch=master)
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
