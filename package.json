@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "nans-random-thoughts",
+  "private": false,
+  "description": "Simply a JAM stack blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nans Dumortier <dumortier.nans@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -51,7 +51,7 @@
     "husky": "^4.2.3",
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/NansD/nans-random-thoughts",
   "keywords": [
     "gatsby"
   ],
@@ -59,7 +59,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "https://github.com/NansD/nans-random-thoughts.git"
   },
   "scripts": {
     "build": "gatsby build",
