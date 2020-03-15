@@ -10,6 +10,10 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import favicon16 from '../../content/assets/favicon/favicon-16x16.png';
+import favicon32 from '../../content/assets/favicon/favicon-32x32.png';
+import favicon96 from '../../content/assets/favicon/favicon-96x96.png';
+
 const SEO = ({
   description, lang, meta, title,
 }) => {
@@ -36,6 +40,15 @@ const SEO = ({
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[
+        {
+          rel: 'icon', type: 'image/png', sizes: '16x16', href: `${favicon16}`,
+        },
+        {
+          rel: 'icon', type: 'image/png', sizes: '32x32', href: `${favicon32}`,
+        },
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` },
+      ]}
       meta={[
         {
           name: 'description',
