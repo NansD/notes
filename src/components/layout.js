@@ -69,6 +69,10 @@ const Layout = ({ location, title, children }) => {
         , Built with
         {' '}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
+        using
+        <a href="https://reactjs.org/">
+          React
+        </a>
       </footer>
     </div>
   );
