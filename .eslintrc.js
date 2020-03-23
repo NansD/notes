@@ -3,8 +3,10 @@ module.exports = {
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb"
+    "airbnb",
+    "plugin:jest/recommended"
   ],
+  "plugins": ["jest"],
   "rules": {
     "strict": 0,
     "react/jsx-filename-extension": [
