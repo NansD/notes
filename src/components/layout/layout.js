@@ -3,6 +3,9 @@ import { Link } from 'gatsby';
 
 import { PropTypes } from 'prop-types';
 import { rhythm, scale } from '../../utils/typography';
+import ThemeToggle from '../theme-toggle/theme-toggle';
+
+import './layout.css';
 
 const Layout = ({ location, title, children }) => {
   // eslint-disable-next-line no-undef
@@ -61,6 +64,7 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <header>{header}</header>
+      <ThemeToggle />
       <main>{children}</main>
       <footer>
         ©
@@ -81,7 +85,9 @@ const Layout = ({ location, title, children }) => {
 };
 
 Layout.propTypes = {
-  location: PropTypes.string.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }).isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
