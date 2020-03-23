@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import { PropTypes } from 'prop-types';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm, scale } from '../../utils/typography';
 
 const Layout = ({ location, title, children }) => {
   // eslint-disable-next-line no-undef

@@ -3,9 +3,9 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import PropTypes from 'prop-types';
-import Bio from '../components/bio';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Bio from '../components/bio/bio';
+import Layout from '../components/layout/layout';
+import SEO from '../components/seo/seo';
 import { rhythm, scale } from '../utils/typography';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {

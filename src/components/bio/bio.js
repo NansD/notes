@@ -11,8 +11,8 @@ import Image from 'gatsby-image';
 import {
   FaDev, FaLinkedin, FaTwitterSquare, FaGithubSquare,
 } from 'react-icons/fa';
-import { rhythm } from '../utils/typography';
-import SocialNetworkLink from './social-network-link';
+import { rhythm } from '../../utils/typography';
+import SocialNetworkLink from '../social-network-link/social-network-link';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
