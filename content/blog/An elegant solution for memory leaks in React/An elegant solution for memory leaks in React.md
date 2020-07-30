@@ -15,7 +15,7 @@ When working with asynchronous calls, for example API calls, you might have enco
 
 ## A GIF is worth a thousand words ...
 
-![leaky GIF](/Users/nans/code/my-blog-starter/content/blog/An elegant solution for memory leaks in React/res/leaky.gif)
+![leaky GIF](./res/leaky.gif)
 
 This is a small page that simulates some asynchronous logic on load, and then updates the view accordingly. Here, I unmount the component before the async work has been finished, and trigger the Error. (I took this example from [this](https://stackoverflow.com/questions/56442582/react-hooks-cant-perform-a-react-state-update-on-an-unmounted-component/63176693#63176693) StackOverFlow post)
 
