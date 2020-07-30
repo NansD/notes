@@ -82,6 +82,8 @@ function OtherExample() {
 
 Here is the [CodeSandBox](https://codesandbox.io/s/use-local-variable-to-avoid-setstate-on-unmouted-component-6k08n?file=/src/index.js:459-695) if you wanna play around !
 
+## TLDR
+Use [useStateIfMounted](https://www.npmjs.com/package/use-state-if-mounted) hook, that will only update the state if your component is mounted ! 🚀
 
 
 I hope this might be helpful, feel free to reach me out in any case ! 🤗
