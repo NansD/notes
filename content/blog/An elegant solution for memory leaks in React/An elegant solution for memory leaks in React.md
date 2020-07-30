@@ -34,7 +34,7 @@ function Example() {
 }
 `````
 
-When running into that issue, I found multiple solutions, the most used one seem to be this one :
+When running into that issue, I found multiple solutions, the most used one seems to be this one :
 
 `````javascript
 function OtherExample() {
