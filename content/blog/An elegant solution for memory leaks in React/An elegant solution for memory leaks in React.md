@@ -5,8 +5,6 @@ description: "I created a hook to solve a common problem in React in an elegant 
 
 ---
 
-# An elegant solution for memory leaks in React
-
 When working with asynchronous calls, for example API calls, you might have encountered this error :
 
 `Can't perform a React state update on an unmounted component. This is  a no-op, but it indicates a memory leak in your application. To fix,  cancel all subscriptions and asynchronous tasks in a useEffect cleanup  function.`
