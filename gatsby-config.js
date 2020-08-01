@@ -3,7 +3,7 @@ module.exports = {
     title: 'Nans\' random thoughts',
     author: {
       name: 'Nans Dumortier',
-      summary: 'who is a French Software Engineer at IBM',
+      summary: 'who is a French Software Engineer at IBM (opinions are mine)',
     },
     description: 'Nans\' blog',
     siteUrl: 'http://nans-dumortier.com',

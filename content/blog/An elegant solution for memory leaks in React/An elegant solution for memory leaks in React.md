@@ -5,6 +5,13 @@ description: "I created a hook to solve a common problem in React in an elegant 
 
 ---
 
+## 🔴 UPDATE
+
+This "solution" doesn't seem to *completely* avoid leaks. Even AbortController doesn't seem to be the silver bullet against memory leaks 😰.
+Check out the [discussion in the comments](https://dev.to/nans/an-elegant-solution-for-memory-leaks-in-react-1hol)!
+
+----
+
 When working with asynchronous calls, for example API calls, you might have encountered this error :
 
 `Can't perform a React state update on an unmounted component. This is  a no-op, but it indicates a memory leak in your application. To fix,  cancel all subscriptions and asynchronous tasks in a useEffect cleanup  function.`
