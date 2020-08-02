@@ -51,6 +51,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-dark-mode',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
