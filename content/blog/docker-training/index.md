@@ -2,6 +2,7 @@
 title: Docker training
 date: "2020-03-13T15:15:00.284Z"
 description: "Notes taken during Docker training"
+tags: ['training', 'devOps']
 ---
 
 # Docker Essentials: A developer introduction
@@ -29,7 +30,7 @@ Docker is tooling to manage containers.
 docker container run -t ubuntu top
 ```
 
-The docker run command first starts a docker pull to download the Ubuntu image onto your host. After it is downloaded, it will start the container. 
+The docker run command first starts a docker pull to download the Ubuntu image onto your host. After it is downloaded, it will start the container.
 
 Even though we are using the Ubuntu image, it is important to note that the container does not have its own kernel. It uses the kernel of the host and the Ubuntu image is used only to provide the file system and tools available on an Ubuntu system.
 
@@ -75,7 +76,7 @@ We can see the containers by running `docker container ls`.
 ```bash
 docker container stop <container-id>
 ```
-2. Remove the stopped containers : 
+2. Remove the stopped containers :
 ```bash
 docker system prune
 ```
@@ -112,8 +113,8 @@ So if it is the last layer, we optimize the caching system.
 - copy-on-write
   - copies files that are edited up to top writable layer
 
-  Lab objectives : 
-  - create custom image using a Dockerfile, 
+  Lab objectives :
+  - create custom image using a Dockerfile,
   - build and run your image locally
   - push your image to your account on DockerHub
   - Update your image with a code change to see Docker image layering/caching in action
@@ -133,7 +134,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0")
 ```
 
-then run 
+then run
 ```bash
 pip3 install flask
 python3 app.py
@@ -174,7 +175,7 @@ docker image build -t python-hello-world ./
 ```
 The `-t` parameter allows us to name the image.
 
-then we can run 
+then we can run
 ```bash
 docker image ls
 ```
@@ -217,7 +218,7 @@ docker login
 ````
 
 Tag the image with you username.
-The Docker Hub naming convention is to tag your image with `[dockerhub username]/[image name]`. 
+The Docker Hub naming convention is to tag your image with `[dockerhub username]/[image name]`.
 
 ```bash
 docker tag python-hello-world nansdibm/python-hello-world
@@ -248,13 +249,13 @@ docker push nansdibm/python-hello-world
 
 ```
 The push refers to repository [docker.io/nansdibm/python-hello-world]
-bd3dadabc6d3: Pushed 
-455874a92037: Layer already exists 
-5f354b8b5dc0: Layer already exists 
-f61107386c17: Layer already exists 
-db49993833a0: Layer already exists 
-58c71ea40fb0: Layer already exists 
-2b0fb280b60d: Layer already exists 
+bd3dadabc6d3: Pushed
+455874a92037: Layer already exists
+5f354b8b5dc0: Layer already exists
+f61107386c17: Layer already exists
+db49993833a0: Layer already exists
+58c71ea40fb0: Layer already exists
+2b0fb280b60d: Layer already exists
 ```
 There is a caching mechanism in place for pushing layers too. Docker Hub already has all but one of the layers from an earlier push, so it only pushes the one layer that has changed.
 
@@ -321,7 +322,7 @@ Setup a 3 node cluster with container orchestration with Docker Swarm.
 - Demonstrate node failure and reconciliation
 
 ### Create your first swarm
-Using https://labs.play-with-docker.com/ 
+Using https://labs.play-with-docker.com/
 Create a new instance
 
 ```bash
@@ -340,12 +341,12 @@ docker swarm join-token manager
 
 > You can think of Docker Swarm as a special mode that is activated by the command: docker swarm init. The --advertise-addr option specifies the address in which the other nodes will use to join the swarm.
 
-With other instances, you can join the swarm by running 
+With other instances, you can join the swarm by running
 ```bash
 docker swarm join --token SWMTKN-1-61p9nb8opn3tg8lchklkbyjz7uhysj8krjexrlaxpr3kaprte8-ex2t37ry9f8ux0xu92u3jfsm8 192.168.0.8:2377
 ```
 
-Back on node1, run 
+Back on node1, run
 ```bash
 docker node ls
 ```
@@ -400,7 +401,7 @@ docker swarm leave
 
 ### Determine how many nodes you need
 For a production application, you should provision a cluster with multiple manager nodes to allow for manager node failiures.
-At least 3 manager nodes, but no more than 7. 
+At least 3 manager nodes, but no more than 7.
 - 3 manager nodes tolerate 1 node failure
 - 5 manager nodes tolerate 2 node failures
 - 7 manager nodes tolerate 3 node failures
@@ -412,4 +413,3 @@ Play with docker Templates :
 - Docker Swarm schedules services by using a declarative language. You declare the state, and the swarm attempts to maintain and reconcile to make sure the actual state equals the desired state.
 - Docker Swarm is composed of manager and worker nodes. Only managers can maintain the state of the swarm and accept commands to modify it. Workers have high scalability and are only used to run containers. By default, managers can also run containers.
 - The routing mesh built into Docker Swarm means that any port that is published at the service level will be exposed on every node in the swarm. Requests to a published service port will be automatically routed to a container of the service that is running in the swarm.
-

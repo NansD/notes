@@ -1,11 +1,12 @@
 ---
 title: Lambda training
 date: "2020-03-11T15:15:00.284Z"
-description: "Notes taken during AWS lambda education"
+description: "Notes taken during AWS lambda training"
+tags: ['training', 'AWS']
 ---
 # Learn AWS Lambda and see real world example with serverless
 
-main documentation : https://serverless.com/ 
+main documentation : https://serverless.com/
 
 ## What is lambda
 functions
@@ -112,7 +113,7 @@ can specify securityGroupIds and subnetsId in the serverless.yml file.
 Triggering a function from an s3 event :
 ![](./res/2020-03-12-11-27-59.png)
 
-plugin : 
+plugin :
 serverless-python-requirements
 it installs what's written in requirements.txt file.
 Pillow => import PIL
@@ -126,7 +127,7 @@ Lambda functions are stateless, they don't keep anything in memory, so they will
 package.json => like requirements.txt
 
 ```yaml
-environment : 
+environment :
   DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
 ```
 
@@ -149,5 +150,3 @@ response should always have a statusCode and a body.
 
 ## Personal investigation : creating a full stack app
 If you want to build an app that can leverage that rest API that is written in Lambda, you can use aws-amplify : https://aws-amplify.github.io/docs/js/api.
-
-

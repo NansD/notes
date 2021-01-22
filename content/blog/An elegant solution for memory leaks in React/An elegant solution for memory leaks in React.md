@@ -2,12 +2,12 @@
 title: An elegant solution for memory leaks in React
 date: "2020-07-30T18:35:00.284Z"
 description: "I created a hook to solve a common problem in React in an elegant way"
-
+tags: ['article', 'react']
 ---
 
 ## 🔴 UPDATE
 
-This "solution" doesn't seem to *completely* avoid leaks. Even AbortController doesn't seem to be the silver bullet against memory leaks 😰.
+This "solution" doesn't seem to *really* avoid leaks. Even AbortController doesn't seem to be the silver bullet against memory leaks 😰.
 Check out the [discussion in the comments](https://dev.to/nans/an-elegant-solution-for-memory-leaks-in-react-1hol)!
 
 ----
