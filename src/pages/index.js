@@ -9,11 +9,11 @@ import SEO from '../components/seo/seo';
 import { rhythm } from '../utils/typography';
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
+  const { title: blogTitle, description } = data.site.siteMetadata;
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={blogTitle} description={description}>
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
@@ -78,6 +78,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

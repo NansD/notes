@@ -106,7 +106,6 @@ export const pageQuery = graphql`
   }
 `;
 
-
 BlogPostTemplate.propTypes = PropTypes.shape({
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({

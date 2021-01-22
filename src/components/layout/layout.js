@@ -4,31 +4,38 @@ import { Link } from 'gatsby';
 import { PropTypes } from 'prop-types';
 import { rhythm, scale } from '../../utils/typography';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({
+  location, title, description, children,
+}) => {
   // eslint-disable-next-line no-undef
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
+      <>
+        <h1
           style={{
-            boxShadow: 'none',
-            textDecoration: 'none',
-            color: 'inherit',
+            ...scale(1.5),
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
           }}
-          to="/"
         >
-          {title}
-        </Link>
-      </h1>
+          <Link
+            style={{
+              boxShadow: 'none',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+            to="/"
+          >
+            {title}
+          </Link>
+        </h1>
+        <p>
+          {description}
+        </p>
+      </>
     );
   } else {
     header = (
@@ -83,10 +90,15 @@ const Layout = ({ location, title, children }) => {
 Layout.propTypes = {
   location: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+};
+
+Layout.defaultProps = {
+  description: '',
 };
 
 export default Layout;
