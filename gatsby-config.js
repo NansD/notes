@@ -3,9 +3,9 @@ module.exports = {
     title: 'Nans\' random thoughts',
     author: {
       name: 'Nans Dumortier',
-      summary: 'who is a French Software Engineer at IBM (opinions are mine)',
+      summary: 'who is a French Software Developer.',
     },
-    description: 'Nans\' blog',
+    description: 'Nans\' blog. This is actually more a notepad than anything else, you will discover the notes I take during some trainings, or while reading some books.',
     siteUrl: 'http://nans-dumortier.com',
     social: {
       twitter: 'NansDumortier',
