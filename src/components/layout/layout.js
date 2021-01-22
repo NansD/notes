@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 
 import { PropTypes } from 'prop-types';
 import { rhythm, scale } from '../../utils/typography';
+import SeeTags from '../see-tags/see-tags';
+import SeeArticles from '../see-articles/see-articles';
 
 const Layout = ({
   location, title, description, children,
@@ -11,7 +13,7 @@ const Layout = ({
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
 
-  if (location.pathname === rootPath) {
+  if (location.pathname === rootPath || location.pathname === `${rootPath}tags`) {
     header = (
       <>
         <h1
@@ -35,6 +37,7 @@ const Layout = ({
         <p>
           {description}
         </p>
+        { location.pathname.includes('tags') ? <SeeArticles /> : <SeeTags />}
       </>
     );
   } else {
@@ -88,7 +91,9 @@ const Layout = ({
 };
 
 Layout.propTypes = {
-  location: PropTypes.string.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   children: PropTypes.oneOfType([
