@@ -5,7 +5,7 @@ module.exports = {
       name: 'Nans Dumortier',
       summary: 'who is a French Software Developer.',
     },
-    description: 'Nans\' blog. This is actually more a notepad than anything else, you will discover the notes I take during some trainings, or while reading some books.',
+    description: 'Nans\' blog. This is actually more a notepad than anything else, you will discover the notes I take during some trainings, or while reading some books. Sometimes I write in English, sometimes in French, sometimes both at the same time, sorry about that !',
     siteUrl: 'http://nans-dumortier.com',
     social: {
       twitter: 'NansDumortier',
