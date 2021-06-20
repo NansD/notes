@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nans\' random thoughts',
+    title: 'Nans\' blogs',
     author: {
       name: 'Nans Dumortier',
       summary: 'who is a French Software Developer.',
     },
-    description: 'Nans\' blog. This is actually more a notepad than anything else, you will discover the notes I take during some trainings, or while reading some books. Sometimes I write in English, sometimes in French, sometimes both at the same time, sorry about that !',
+    description: 'This is actually more a notepad than anything else, you will discover the notes I take during some trainings, or while reading some books. Sometimes I write in English, sometimes in French, sometimes both at the same time, sorry about that ! (🇬🇧/🇫🇷)',
     siteUrl: 'http://nans-dumortier.com',
     social: {
       twitter: 'NansDumortier',
@@ -20,6 +20,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: 'blog',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/portfolio`,
+        name: 'portfolio',
       },
     },
     {

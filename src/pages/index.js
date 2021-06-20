@@ -3,7 +3,6 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import { PropTypes } from 'prop-types';
-import Bio from '../components/bio/bio';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 import { rhythm } from '../utils/typography';
@@ -15,7 +14,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={blogTitle} description={description}>
       <SEO title="All posts" />
-      <Bio />
+      <h1> All posts:</h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
@@ -81,7 +80,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { fileAbsolutePath: { regex: "/blog/"}}) {
       edges {
         node {
           excerpt

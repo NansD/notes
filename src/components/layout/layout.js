@@ -5,6 +5,7 @@ import { PropTypes } from 'prop-types';
 import { rhythm, scale } from '../../utils/typography';
 import SeeTags from '../see-tags/see-tags';
 import SeeArticles from '../see-articles/see-articles';
+import SeePortfolio from '../see-portfolio/see-portfolio';
 
 const Layout = ({
   location, title, description, children,
@@ -38,6 +39,7 @@ const Layout = ({
           {description}
         </p>
         { location.pathname.includes('tags') ? <SeeArticles /> : <SeeTags />}
+        <SeePortfolio />
       </>
     );
   } else {

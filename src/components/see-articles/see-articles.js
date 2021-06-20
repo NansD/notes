@@ -7,6 +7,7 @@
 
 import { Link } from 'gatsby';
 import React from 'react';
+import { GrArticle } from 'react-icons/gr';
 
 const SeeArticles = () => (
   <div
@@ -15,6 +16,8 @@ const SeeArticles = () => (
     }}
   >
     <p>
+      <GrArticle />
+      {' '}
       See the list of articles
       <Link to="/"> here</Link>
       .

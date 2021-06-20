@@ -73,10 +73,10 @@ const Bio = () => {
         Find me on :
         <br />
         <SocialNetworkLink
-          href={`https://twitter.com/${social.twitter}`}
-          color="#1da1f2"
+          href={`https://github.com/${social.github}`}
+          color="#000000"
         >
-          <FaTwitterSquare size="2em" />
+          <FaGithubSquare size="2em" />
         </SocialNetworkLink>
         <SocialNetworkLink
           href={`https://www.linkedin.com/in/${social.linkedIn}/`}
@@ -91,11 +91,12 @@ const Bio = () => {
           <FaDev size="2em" />
         </SocialNetworkLink>
         <SocialNetworkLink
-          href={`https://github.com/${social.github}`}
-          color="#000000"
+          href={`https://twitter.com/${social.twitter}`}
+          color="#1da1f2"
         >
-          <FaGithubSquare size="2em" />
+          <FaTwitterSquare size="2em" />
         </SocialNetworkLink>
+
       </p>
     </div>
   );

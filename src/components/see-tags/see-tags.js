@@ -7,6 +7,7 @@
 
 import { Link } from 'gatsby';
 import React from 'react';
+import { FaTags } from 'react-icons/fa';
 
 const SeeTags = () => (
   <div
@@ -15,8 +16,13 @@ const SeeTags = () => (
     }}
   >
     <p>
+      <FaTags />
+      {' '}
       See the topics approached by this blog
-      <Link to="/tags"> here</Link>
+      <Link to="/tags">
+        {' '}
+        here
+      </Link>
       .
     </p>
   </div>
