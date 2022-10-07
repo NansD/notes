@@ -5,6 +5,8 @@ description: "Basic interview questions"
 tags: ['interview', 'frontend']
 ---
 
+Those are just some random questions I sometimes ask when evaluating junior developers.
+
 ⭐
 
 - What will these lines do ?

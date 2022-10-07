@@ -1,9 +1,11 @@
 ---
-title: NodeJS, Express, Serverless Interview questions
+title: Nodejs Backend Development questions
 date: "2020-08-15T18:35:00.284Z"
 description: "Basic interview questions"
 tags: ['interview', 'backend']
 ---
+
+Those are just some random questions I sometimes ask when evaluating junior developers.
 
 ⭐
 

@@ -5,6 +5,8 @@ description: "Basic interview questions"
 tags: ['interview', 'javascript']
 ---
 
+Those are just some random questions I sometimes ask when evaluating junior developers.
+
 ⭐
 
 - Difference between `==` and `===` ?
