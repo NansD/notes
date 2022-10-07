@@ -5,9 +5,6 @@ description: "I made simple hook to create, read, update and delete data from Ai
 tags: ['non-dev', 'environment', 'lca', 'acv', 'french 🇫🇷']
 ---
 
-
-# Face à la complexité de la crise environnementale, il faut faciliter les prises de décision
-
 Le climat se dérègle, ce n'est plus un débat. On a aussi des problèmes de disponibilité des ressources fossiles, de dérèglement de la biodiversité, de disponibilité de l'eau ... Ça commence à faire beaucoup d'infos à digérer.
 
 Une fois qu'on a choisi d'agir pour les causes environnementales, par où commencer ? Comment peut-on prioriser nos actions ?
