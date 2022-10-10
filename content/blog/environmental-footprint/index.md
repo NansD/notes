@@ -19,6 +19,8 @@ Pour vérifier qu'on fait bien quelque chose, en général, on prend des mesures
 
 ![image.png](./media/image.png)
 
+> Schéma du principe de mesure et de rétro-action d'un régulateur de vitesse
+
 Grosso modo, ça ressemble à ça.
 
 En principe, on peut essayer de contrôler n'importe quelle grandeur avec ce genre de système. C'est comme ça qu'on peut faire un métro automatique, ou même qu'on commande les pales d'un hélicoptère.
@@ -64,14 +66,14 @@ Donc comment on évite les transferts d'impact ? On se dote d'un score le plus g
 
 ## Comment se servir du Single Score ?
 
-Pour obtenir ce score, on mène une **Analyse du Cycle de Vie (ACV). **Ce terme désigne une méthode d'évaluation qui permet d'analyser tous les maillons de la chaine de valeur d'un produit ou service.
+Pour obtenir ce score, on mène une **Analyse du Cycle de Vie (ACV). **Ce terme désigne une méthode d'évaluation qui permet d'analyser tous les maillons de la chaîne de valeur d'un produit ou service.
 
 Et on parle vraiment de tous les maillons ! Ça part de l'extraction de la matière première, jusqu'à la fin de vie du produit avec le traitement des déchets. Quand on fait l'ACV d'une tomate, on part depuis les minéraux qui constituent le tracteur jusqu'au compost du particulier. On compte aussi le cas ou la tomate est jetée à la poubelle, on compte aussi le cas où la tomate a été mise de côté car "hors calibre" à la ferme.
 
 ![image.png](./media/b7d35e8b-6c1a-4273-a6b7-a0520bf4849b_image.png)
 > Extrait de l'ACV du Burritos, de l'usine jusqu'au supermarché
 
-Une fois qu'on a modélisé un produit existant, on peut commencer à imaginer des scénarios **d'éco-conception. **
+Une fois qu'on a modélisé un produit existant, on peut commencer à imaginer des scénarios **d'éco-conception. ** Si on reprend le schéma du régulateur de vitesse, on va donc envoyer un signal de rétro-action.
 
 On peut faire une première tentative en essayant de chercher à s'approvisionner de façon locale : on supprime tous les transports (oui c'est utopique, mais faisons l'exercice).
 
