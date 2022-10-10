@@ -1,7 +1,7 @@
 ---
 title: Face à la complexité de la crise environnementale, il faut faciliter les prises de décision
 date: "2022-10-10T09:35:00.284Z"
-description: "I made simple hook to create, read, update and delete data from Airtable"
+description: "Je vous partage un peu de mon cheminement sur les questions environnementales."
 tags: ['non-dev', 'environment', 'lca', 'acv', 'french 🇫🇷']
 ---
 
