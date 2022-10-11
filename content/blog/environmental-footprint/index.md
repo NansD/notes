@@ -110,8 +110,6 @@ Données d'impact environnemental de différents biens alimentaires (schémas en
 
 L'outil d'ACV simplifiée que je développe: <https://karbon.earth>
 
-L'affichage environnemental règlementaire: <https://www.ecologie.gouv.fr/laffichage-environnemental-des-produits-et-des-services-hors-alimentaire>
+L'affichage environnemental réglementaire: <https://www.ecologie.gouv.fr/laffichage-environnemental-des-produits-et-des-services-hors-alimentaire>
 
 La base de données utilisée pour les produits agro-alimentaires: <https://doc.agribalyse.fr/documentation/conditions-dusage-des-donnees#guide-utilisateur>
-
-          
