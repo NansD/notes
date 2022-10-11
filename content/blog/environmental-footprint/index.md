@@ -45,7 +45,7 @@ On a besoin d'une grandeur qui nous permettrait d'éviter les **transferts d'imp
 
 ## Comment éviter les transferts d'impact ?
 
-La commission Européenne a demandé à des scientifiques de se mettre d'accord sur la question, sous le projet _Product Environnemental Footprint, \_PEF pour les intimes_.\_ On a commencé par déterminer quels sont les indicateurs à mesurer. La Commission Européenne a tranché pour [16 indicateurs.](https://doc.agribalyse.fr/documentation/methodologie-acv#les-indicateurs-acv-fournis-dans-agribalyse) Sans tous les lister, on y retrouve le changement climatique, l'épuisement des ressources en eau, l'épuisement des ressources énergétiques, l'usage des terres, l'eutrophisation terrestre/eau douce/marine ...
+La commission Européenne a demandé à des scientifiques de se mettre d'accord sur la question, sous le projet _Product Environnemental Footprint, _PEF pour les intimes_. On a commencé par déterminer quels sont les indicateurs à mesurer. La Commission Européenne a tranché pour [16 indicateurs.](https://doc.agribalyse.fr/documentation/methodologie-acv#les-indicateurs-acv-fournis-dans-agribalyse) Sans tous les lister, on y retrouve le changement climatique, l'épuisement des ressources en eau, l'épuisement des ressources énergétiques, l'usage des terres, l'eutrophisation terrestre/eau douce/marine ...
 
 Le PEF propose ensuite de regrouper ces grandeurs sous un "Single Score", exprimé en points. Il est obtenu à la suite d'une normalisation et d'une pondération.
 
@@ -66,14 +66,14 @@ Donc comment on évite les transferts d'impact ? On se dote d'un score le plus g
 
 ## Comment se servir du Single Score ?
 
-Pour obtenir ce score, on mène une **Analyse du Cycle de Vie (ACV). **Ce terme désigne une méthode d'évaluation qui permet d'analyser tous les maillons de la chaîne de valeur d'un produit ou service.
+Pour obtenir ce score, on mène une **Analyse du Cycle de Vie (ACV).** Ce terme désigne une méthode d'évaluation qui permet d'analyser tous les maillons de la chaîne de valeur d'un produit ou service.
 
 Et on parle vraiment de tous les maillons ! Ça part de l'extraction de la matière première, jusqu'à la fin de vie du produit avec le traitement des déchets. Quand on fait l'ACV d'une tomate, on part depuis les minéraux qui constituent le tracteur jusqu'au compost du particulier. On compte aussi le cas ou la tomate est jetée à la poubelle, on compte aussi le cas où la tomate a été mise de côté car "hors calibre" à la ferme.
 
 ![image.png](./media/b7d35e8b-6c1a-4273-a6b7-a0520bf4849b_image.png)
 > Extrait de l'ACV du Burritos, de l'usine jusqu'au supermarché
 
-Une fois qu'on a modélisé un produit existant, on peut commencer à imaginer des scénarios **d'éco-conception. ** Si on reprend le schéma du régulateur de vitesse, on va donc envoyer un signal de rétro-action.
+Une fois qu'on a modélisé un produit existant, on peut commencer à imaginer des scénarios **d'éco-conception.** Si on reprend le schéma du régulateur de vitesse, on va donc envoyer un signal de rétro-action.
 
 On peut faire une première tentative en essayant de chercher à s'approvisionner de façon locale : on supprime tous les transports (oui c'est utopique, mais faisons l'exercice).
 
