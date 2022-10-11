@@ -60,7 +60,7 @@ Pondérer c'est donner plus ou moins d'importance aux différents impacts. Pour 
 ![image.png](./media/c3a98701-89c3-4e16-90ab-4e285c634b6f_image.png)
 > Aperçu du détail des données
 
-Le PEF a des limites malheureusement. Il manque d'un indicateur spécifique à la biodiversité, il manque aussi d'indications pour les pollutions au micro-plastique ... Mais c'est au moins une méthodologie qui fait **consensus chez les scientifiques**.
+Le PEF a des limites malheureusement. Il manque un indicateur spécifique à la biodiversité, il manque aussi un indicateur pour les pollutions au micro-plastique ... Mais c'est au moins une méthodologie qui fait **consensus chez les scientifiques**.
 
 Donc comment on évite les transferts d'impact ? On se dote d'un score le plus global possible, et on ajuste notre régulateur de vitesse de telle sorte à ce qu'il diminue le score.
 
