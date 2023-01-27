@@ -20,3 +20,5 @@ Those are just some random questions I sometimes ask when evaluating junior deve
 
 
 ⭐⭐⭐
+
+- How do you handle authentication ?

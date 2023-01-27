@@ -17,19 +17,19 @@ Those are just some random questions I sometimes ask when evaluating junior deve
   }
 
   #header {
-    color: 'yellow';
+    color: yellow;
   }
 
   .header > h1 {
-    color: 'blue';
+    color: blue;
   }
 
   input.header {
-    color: 'brick';
+    color: brick;
   }
 
   div.header {
-    color: 'brown';
+    color: brown;
   }
 
   ```

@@ -9,25 +9,16 @@ Those are just some random questions I sometimes ask when evaluating junior deve
 
 ⭐
 
-- Difference between `==` and `===` ?
+- What is the difference between `==` and `===` ?
 
 - What is the output ?
 
   ```javascript
-  const d = {};
+  const animals = {};
   ['zebra', 'horse'].forEach(function(k) {
-  	d[k] = undefined;
+  	animals[k] = undefined;
   });
-  // console.log(d); ?
-  ```
-
-
-- What is the output ?
-
-  ```javascript
-  console.log(1 + '2' + '2');
-  console.log(1 + -'1' + '2');
-  console.log('A' - 'B' + '2');
+  console.log(animals); ?
   ```
 
  ⭐⭐
@@ -39,15 +30,32 @@ Those are just some random questions I sometimes ask when evaluating junior deve
   [1,2,3].forEach(/*() => { ... }*/);
   ```
 
+- What is the output ?
+```javascript
+const numbersAndStuff = [0, 2, 4, 6, undefined];
+const filtered = numbersAndStuff.filter(element => element);
+console.log(filtered);
+```
 
+- What is a closure ?
 
-- What is a Closure ?
+- What is a Promise ?
 
-
-  - What is a Promise ?
-
-
-
+- What is the output ?
+```javascript
+function updateUserName(user, name) {
+  user.name = name;
+  return user;
+}
+const john = {
+  name: 'John',
+  age: 48,
+};
+console.log('John', john);
+const jane = updateUserName(john, 'Jane');
+console.log('Jane', jane);
+console.log('John', john);
+```
 
 
 ⭐⭐⭐
