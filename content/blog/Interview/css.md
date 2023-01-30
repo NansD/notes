@@ -13,7 +13,7 @@ Those are just some random questions I sometimes ask when evaluating junior deve
 
   ```css
   .header {
-    color: 'red';
+    color: red;
   }
 
   #header {
