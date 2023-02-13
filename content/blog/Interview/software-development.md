@@ -13,4 +13,5 @@ tags: ['interview']
 - What is a micro-service architecture ? What is it used for ?
 
 ⭐⭐⭐
+- What is Dependency Inversion Principle (DIP) ?
 - Describe an example of clean architecture.
